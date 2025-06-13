@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.post {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    margin: 10px 0;
+}
+
+/* Gemeinsames Button-Styling */
+.delete-button,
+.update-link,
+.like-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    height: 36px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+/* Submit-Button im Formular */
+button[type="submit"]:not(.delete-button) {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 80px;
+}
+
+button[type="submit"]:not(.delete-button):hover {
+    background-color: #45a049;
+}
+
+/* Spezifische Button-Farben */
+.delete-button {
+    background-color: #ff0000 !important;
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    background-color: #cc0000 !important;
+}
+
+.update-link {
+    background-color: #4CAF50;
+}
+
+.update-link:hover {
+    background-color: #45a049;
+}
+
+.like-link {
+    background-color: #3498db;
+}
+
+.like-link:hover {
+    background-color: #2980b9;
+}
+
+/* Add Post Button */
+.add-post-link {
+    display: inline-block;
+    background-color: #8f999f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.add-post-link:hover {
+    background-color: #717b80;
+}
+
+/* Like Counter */
+.like-count {
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Styling für das Formular */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.back-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
