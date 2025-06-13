@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Flask Blog</title>
+    <title>💬 My Flask Blog</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>📰 Welcome to My Flask Blog!</h1>
+    <h1>👨🏻‍💻 Welcome to My Flask Blog! 👩🏻‍💻</h1>
     <div class="blog-posts">
         {% for post in posts %}
         <div class="post">
@@ -15,15 +15,15 @@
             <p><em>Written by {{ post.author }}</em></p>
             <p>{{ post.content }}</p>
             <form method="POST" action="{{ url_for('delete', post_id=post.id) }}" style="display: inline;">
-                <button type="submit" class="delete-button">Delete</button>
+                <button type="submit" class="delete-button">Delete 🗑</button>
             </form>
-            <a href="{{ url_for('update', post_id=post.id) }}" class="update-link">Update</a>
+            <a href="{{ url_for('update', post_id=post.id) }}" class="update-link">Update 🔄</a>
             <a href="{{ url_for('like', post_id=post.id) }}" class="like-link">
-                Like <span class="like-count">{{ post.likes }}</span>
+                Like 👍🏼<span class="like-count">{{ post.likes }}</span>
             </a>
         </div>
         {% endfor %}
     </div>
-    <a href="{{ url_for('add') }}" class="add-post-link">Add New Post</a>
+    <a href="{{ url_for('add') }}" class="add-post-link">Add New Post 🖊</a>
 </body>
 </html>
