@@ -138,15 +138,28 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-.back-link {
+.update-back-link {
     display: block;
-    text-align: center;
+    text-align: left;
     color: #666;
     text-decoration: none;
     margin-top: 20px;
 }
 
-.back-link:hover {
+.update-back-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.add-back-link {
+    display: block;
+    text-align: left;
+    color: #666;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.add-back-link:hover {
     color: #333;
     text-decoration: underline;
 }
